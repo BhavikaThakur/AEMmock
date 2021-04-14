@@ -1,0 +1,6 @@
+{
+  "mobile.resourceTypes": [
+    "BVICAM-4699/components/page"
+  ],
+  "README": "Indicate which page resource types should display the mobile emulators."
+}
