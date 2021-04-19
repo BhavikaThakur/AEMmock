@@ -13,7 +13,6 @@ import io.wcm.testing.mock.aem.junit5.AemContext;
 import io.wcm.testing.mock.aem.junit5.AemContextExtension;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
-
 import java.util.List;
 
 @ExtendWith({AemContextExtension.class ,  MockitoExtension.class})
@@ -110,26 +109,26 @@ public class BylineImplTest {
         assertTrue(byline.isEmpty());
     }
 
-   /* @Test
+    @Test
     public void testIsEmpty_WithoutImageSrc() {
         ctx.currentResource("/content/byline");
 
-        when(image.getSrc()).thenReturn("");
+        lenient().when(image.getSrc()).thenReturn("");
 
         Byline byline = ctx.request().adaptTo(Byline.class);
 
         assertTrue(byline.isEmpty());
     }
 
-  /*  @Test
+    @Test
     public void testIsNotEmpty() {
         ctx.currentResource("/content/byline");
-        when(image.getSrc()).thenReturn("/content/bio.png");
+        lenient().when(image.getSrc()).thenReturn("/content/bio.png");
 
         Byline byline = ctx.request().adaptTo(Byline.class);
 
         assertFalse(byline.isEmpty());
-    }*/
+    }
 
 
 }

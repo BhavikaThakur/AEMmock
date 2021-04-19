@@ -1,11 +1,13 @@
 package com.adobe.bvicam.site.core.models.impl;
-
+//protected static final String RESOURCE_TYPE = "BVICAM-4699/components/byline";
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import javax.annotation.PostConstruct;
 
 import com.adobe.bvicam.site.core.models.Byline;
-import com.adobe.cq.wcm.core.components.models.Image;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.sling.api.SlingHttpServletRequest;
-import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.injectorspecific.OSGiService;
@@ -13,10 +15,8 @@ import org.apache.sling.models.annotations.injectorspecific.Self;
 import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 import org.apache.sling.models.factory.ModelFactory;
 
-import javax.annotation.PostConstruct;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import com.adobe.cq.wcm.core.components.models.Image;
+
 @Model(
         adaptables = {SlingHttpServletRequest.class},
         adapters = {Byline.class},
@@ -24,14 +24,13 @@ import java.util.List;
         defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL
 )
 public class BylineImpl implements Byline {
-
     protected static final String RESOURCE_TYPE = "BVICAM-4699/components/byline";
-
-    @OSGiService
-    private ModelFactory modelFactory;
 
     @Self
     private SlingHttpServletRequest request;
+
+    @OSGiService
+    private ModelFactory modelFactory;
 
     @ValueMapValue
     private String name;
@@ -40,10 +39,9 @@ public class BylineImpl implements Byline {
     private List<String> occupations;
 
     private Image image;
+
     @PostConstruct
     private void init() {
-        //Resource res=request.getResource();
-       // name=res.getPath();
         image = modelFactory.getModelFromWrappedRequest(request, request.getResource(), Image.class);
     }
 
@@ -81,9 +79,11 @@ public class BylineImpl implements Byline {
         }
     }
 
+    /**
+     * @return the Image Sling Model of this resource, or null if the resource cannot create a valid Image Sling Model.
+     */
     private Image getImage() {
-        Image image = null;
-        // Figure out how to populate the image variable!
         return image;
     }
 }
+

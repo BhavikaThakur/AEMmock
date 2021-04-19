@@ -1,23 +1,22 @@
 {
   "byline": {
     "jcr:primaryType": "nt:unstructured",
-    "sling:resourceType": "BVICAM-4699/components/byline",
+    "sling:resourceType": "BVICAM-4699/components/content/byline",
     "name": "Jane Doe",
     "occupations": ["Photographer", "Blogger", "YouTuber"]
   },
   "empty": {
     "jcr:primaryType": "nt:unstructured",
-    "sling:resourceType": "wknd/components/content/byline"
+    "sling:resourceType": "BVICAM-4699/components/content/byline"
   },
-
   "without-name": {
     "jcr:primaryType": "nt:unstructured",
-    "sling:resourceType": "wknd/components/content/byline",
+    "sling:resourceType": "BVICAM-4699/components/content/byline",
     "occupations": "[Photographer, Blogger, YouTuber]"
   },
   "without-occupations": {
     "jcr:primaryType": "nt:unstructured",
-    "sling:resourceType": "wknd/components/content/byline",
+    "sling:resourceType": "BVICAM-4699/components/content/byline",
     "name": "Jane Doe"
   }
 }

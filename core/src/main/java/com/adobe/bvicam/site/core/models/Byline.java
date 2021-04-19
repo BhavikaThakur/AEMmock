@@ -3,7 +3,6 @@ package com.adobe.bvicam.site.core.models;
 import java.util.List;
 
 public interface Byline {
-
         /***
          * @return a string to display as the name.
          */

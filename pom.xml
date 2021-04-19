@@ -755,11 +755,7 @@ Bundle-DocURL:
                 <version>4.12</version>
                 <scope>test</scope>
             </dependency>
-            <dependency>
-                <groupId>org.hamcrest</groupId>
-                <artifactId>hamcrest-library</artifactId>
-                <version>2.2</version>
-            </dependency>
+
 
         </dependencies>
     </dependencyManagement>
