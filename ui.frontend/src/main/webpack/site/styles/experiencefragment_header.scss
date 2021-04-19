@@ -1,4 +1,15 @@
+//== XF Header style, used on page template
 
+header.experiencefragment {
+    padding: 50px 0px;
+
+    .cmp-experiencefragment {
+        max-width: $max-content-width;
+        margin: 0 auto;
+    }
+}
+
+/*
 //== XF Header style, used on page template
 
 header.experiencefragment {
@@ -129,3 +140,4 @@ header.experiencefragment {
         height: 26px;
     }
 }
+*/
