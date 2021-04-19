@@ -2,6 +2,8 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
+        cq:lastModified="{Date}2021-04-15T20:05:28.106+05:30"
+        cq:lastModifiedBy="admin"
         cq:tags="[]"
         cq:template="/conf/BVICAM-4699/settings/wcm/templates/xf-web-variation"
         cq:xfMasterVariation="{Boolean}true"
@@ -16,6 +18,46 @@
             <separator
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="BVICAM-4699/components/separator"/>
+            <image
+                jcr:created="{Date}2021-04-15T20:00:26.064+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-04-15T20:02:56.164+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="BVICAM-4699/components/image"
+                alt="BVICAM LOGO"
+                altValueFromDAM="false"
+                displayPopupTitle="true"
+                fileReference="/content/dam/BVICAM-4699/bvicamlogo.png"
+                isDecorative="false"
+                linkURL="/content/BVICAM-4699/us/en"
+                titleValueFromDAM="true">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="0"
+                        width="2"/>
+                </cq:responsive>
+            </image>
+            <navigation
+                jcr:created="{Date}2021-04-15T20:04:12.999+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-04-15T20:05:13.535+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="BVICAM-4699/components/navigation"
+                collectAllPages="false"
+                disableShadowing="false"
+                navigationRoot="/content/BVICAM-4699/us/en"
+                structureDepth="1"
+                structureStart="1">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="0"
+                        width="8"/>
+                </cq:responsive>
+            </navigation>
             <text
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="BVICAM-4699/components/text"

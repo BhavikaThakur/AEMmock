@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2021-04-18T19:24:38.375+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/BVICAM-4699/settings/wcm/templates/page-content"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Component Basics"
+        sling:resourceType="BVICAM-4699/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="BVICAM-4699/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="BVICAM-4699/components/container"
+                layout="responsiveGrid">
+                <title
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="BVICAM-4699/components/title"/>
+                <container
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="BVICAM-4699/components/container"
+                    layout="responsiveGrid">
+                    <helloworld
+                        jcr:created="{Date}2021-04-15T12:43:06.607+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2021-04-15T12:43:06.607+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="BVICAM-4699/components/helloworld"/>
+                    <byline
+                        jcr:created="{Date}2021-04-18T15:36:51.397+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2021-04-18T18:43:25.083+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="BVICAM-4699/components/byline"
+                        fileReference="/content/dam/BVICAM-4699/stacey-roswells.jpg"
+                        name="Stacey Roswell"
+                        occupations="[Photographer,Blogger]"/>
+                </container>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>
